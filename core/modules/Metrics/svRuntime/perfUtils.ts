@@ -118,7 +118,7 @@ export const fetchFxsMemory = async (fxsPid?: number) => {
         return parseFloat((memoryMb).toFixed(2));
     } catch (error) {
         if ((error as any).code = 'ENOENT') {
-            console.error('Failed to get processes tree usage data.');
+            //console.error('Failed to get processes tree usage data.');
             if (!txCore.fxRunner.child?.isAlive) {
                 console.error('The server process is not running.');
             } if (txEnv.isWindows) {
