@@ -122,8 +122,8 @@ export const fetchFxsMemory = async (fxsPid?: number) => {
             if (!txCore.fxRunner.child?.isAlive) {
                 console.error('The server process is not running.');
             } if (txEnv.isWindows) {
-                console.error('This is probably because the `wmic` command is not available in your system.');
-                console.error('If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.');
+                //console.error('This is probably because the `wmic` command is not available in your system.');
+                //console.error('If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.');
             } else {
                 console.error('This is probably because the `ps` command is not available in your system.');
                 console.error('This command is part of the `procps` package in most Linux distributions.');
